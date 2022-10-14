@@ -20,6 +20,8 @@ def operation(exp):
     if exp[0] == '-':
         exp.pop(0)
         exp[0] = str(int(exp[0]) * (-1))
+    elif not exp[0].isdigit():
+        return False
 
     while "*" in exp or "/" in exp:    
         for i in range(len(exp)):
