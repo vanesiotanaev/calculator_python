@@ -33,4 +33,4 @@ def operation(exp):
                     print(' '.join(map(str, exp)))
                     break
 
-    return exp
+    return exp[0]
